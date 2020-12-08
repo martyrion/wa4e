@@ -1,11 +1,13 @@
 <html>
-<head>
-<title>Guessing Game for Charles Severance</title>
-</head>
-<body>
-<h1>Welcome to my guessing game</h1>
-<p>
-<?php
+
+    <head>
+        <title>Guessing Game for Dimitrios Ari Fkiaras</title>
+    </head>
+
+    <body>
+        <h1>Welcome to my guessing game</h1>
+        <p>
+            <?php
   if ( ! isset($_GET['guess']) ) { 
     echo("Missing guess parameter");
   } else if ( strlen($_GET['guess']) < 1 ) {
@@ -16,11 +18,11 @@
     echo("Your guess is too low");
   } else if ( $_GET['guess'] > 42 ) {
     echo("Your guess is too high");
-  } else {
+  } else if ($_GET['guess']= 42) {
     echo("Congratulations - You are right");
   }
 ?>
-</p>
-</body>
+        </p>
+    </body>
+
 </html>
-  
